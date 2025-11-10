@@ -7,7 +7,7 @@ from io import StringIO
 #  Configuration
 # -------------------------------
 mockaroo_api_key = '7df0f660'  # Mockaroo API Key
-github_token = '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'  # GitHub Token
+github_token = ''  # GitHub Token
 repo_name = 'AsifaSiraj/DWM-Project'  # Full repository path including owner
 dataset_folder = 'Database/Datasets'
 

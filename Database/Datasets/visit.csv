@@ -1199,3 +1199,13 @@ visit_id,property_id,visit_date,client_id,description
 1198,1141,2024-05-29,1197,Highly Interested in Rent
 1199,1108,2024-07-25,1190,Highly Interested in Purchase
 1200,1034,2024-03-16,1119,Highly Interested in Purchase
+1,945,1/21/2021,116,error: undefined method `first' for nil:NilClass
+2,884,6/4/2022,182,error: undefined method `first' for nil:NilClass
+3,112,11/8/2023,841,error: undefined method `first' for nil:NilClass
+4,691,8/18/2023,19,error: undefined method `first' for nil:NilClass
+5,592,5/7/2021,852,error: undefined method `first' for nil:NilClass
+6,716,1/25/2022,765,error: undefined method `first' for nil:NilClass
+7,969,3/15/2020,498,error: undefined method `first' for nil:NilClass
+8,374,6/30/2021,429,error: undefined method `first' for nil:NilClass
+9,771,11/25/2021,684,error: undefined method `first' for nil:NilClass
+10,420,8/11/2024,232,error: undefined method `first' for nil:NilClass
