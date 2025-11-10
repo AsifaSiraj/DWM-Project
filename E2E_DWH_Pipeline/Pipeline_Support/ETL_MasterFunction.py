@@ -3,7 +3,7 @@ from Pipeline_Support.ETL_SupportFunctions import fetch_datasets, correct_dtypes
 def etl_master():
     # Data Ingestion
     csv_files=['address', 'client', 'agent', 'owner', 'features', 'property', 'maintenance', 'visit', 'commission', 'sale', 'contract', 'rent', 'admin']
-    base_url='https://raw.githubusercontent.com/hase3b/End-to-End-DWH-Pipeline/main/Database/Datasets/'
+    base_url = "https://raw.githubusercontent.com/AsifaSiraj/DWM-Project/refs/heads/main/Database/Datasets/"
     dataframes=fetch_datasets(csv_files, base_url)
     
     # Fill Missing Values

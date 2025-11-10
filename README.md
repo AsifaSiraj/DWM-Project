@@ -48,11 +48,7 @@ The repository contains the following folders:
    - `Dashboard Snips` - Snapshots of the Power BI dashboard.
    - `Pipeline_Support` - Contains Python scripts for Data Generation, Dimensional Queries, ETL Support Functions, ETL Master Function, Fact Snapshot Creation, and Fact Snapshot Uploading.
 
-4. **Power BI Desktop Template**
-   - `Agent Performance Dashboard.pbix` - Power BI desktop template for the dashboard.
 
-5. **Pabbly Workflow Snippet**
-   - Shows the setup snippet for Pabbly Connect Workflow.
 
 ## Data Generation
 The data generation script uses Mockaroo to create synthetic data for the database.
@@ -90,21 +86,8 @@ The star schema includes the following dimensions and fact table:
 ## Dashboard and Visualization
 The Power BI dashboard visualizes the data from the fact table snapshot.
 
-1. Connect Power BI Desktop to the fact table snapshot:
-    - Get data > Web > "(https://raw.githubusercontent.com/hase3b/End-to-End-DWH-Pipeline/main/E2E%20DWH%20Pipeline/Fact%20Table%20Snapshot/FactSnapshot.csv)"
+1. Snippet
 
-2. Design the dashboard and publish it to web.
-
-3. The dashboard URL: "(https://app.powerbi.com/view?r=eyJrIjoiZjYyOWQxMWItMGFmNi00M2QyLWIzYWItMDYxOTc3ZjBmNmYwIiwidCI6ImZlZTNiOTE2LTAxYzEtNDk4Ny1hNjQ2LWUxOTM0MzJiOWVhYSIsImMiOjl9)"
-
-## Automation with Pabbly Connect
-To automate dashboard updates:
-
-1. Set up a workflow in Pabbly Connect:
-    - **Trigger**: GitHub commit.
-    - **Action**: Refresh Power BI dashboard dataset.
-
-2. Every time the fact table snapshot is updated on GitHub, the Power BI dashboard will refresh automatically.
 
 ## Future Updates
 For updating the data warehouse with new data:
