@@ -42,9 +42,24 @@ def load_fact_snapshot(path: str = None) -> pd.DataFrame:
         if col in df.columns:
             df[col] = _clean_and_coerce(df[col])
 
-    # Ensure TransactionID is integer if present
+    # Clean and coerce Date column: remove repeated header rows and coerce to datetime
+    if 'Date' in df.columns:
+        # Some CSV exports may include repeated header rows or stray 'Date' strings — normalize and coerce
+        df['Date'] = df['Date'].astype(str).str.strip()
+        # Remove literal header-like values
+        df.loc[df['Date'].str.lower() == 'date', 'Date'] = pd.NA
+        # Coerce to datetimes; invalid parsing becomes NaT
+        df['Date'] = pd.to_datetime(df['Date'], errors='coerce', infer_datetime_format=True)
+        n_invalid_dates = int(df['Date'].isna().sum())
+        if n_invalid_dates > 0:
+            print(f'Warning: {n_invalid_dates} rows have invalid or missing Date and will be dropped')
+            df = df.dropna(subset=['Date']).reset_index(drop=True)
+
+    # Ensure TransactionID is integer-like if present (use ffill instead of deprecated fillna(method='ffill'))
     if 'TransactionID' in df.columns:
-        df['TransactionID'] = df['TransactionID'].fillna(method='ffill').astype('Int64')
+        df['TransactionID'] = df['TransactionID'].ffill()
+        # coerce to numeric then to nullable integer dtype
+        df['TransactionID'] = pd.to_numeric(df['TransactionID'], errors='coerce').astype('Int64')
 
     return df
 
