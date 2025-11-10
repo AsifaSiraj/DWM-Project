@@ -27,6 +27,25 @@ def load_fact_snapshot(path: str = None) -> pd.DataFrame:
     if not os.path.exists(p):
         raise FileNotFoundError(f"Fact snapshot not found at {p}")
     df = pd.read_csv(p, parse_dates=['Date'])
+
+    # Defensive numeric coercion: many CSV exports may keep thousand separators or stray symbols.
+    def _clean_and_coerce(col_series):
+        # Convert to string, remove common non-numeric characters (commas, currency signs), then to numeric
+        return pd.to_numeric(col_series.astype(str).str.replace(r'[^0-9\.\-]', '', regex=True), errors='coerce')
+
+    numeric_candidates = [
+        'TransactionValue', 'MaintenanceExp', 'CommissionValue', 'AskedAmount', 'NegotiationDays', 'ClosingDays',
+        'LotArea', 'Bedrooms', 'Bathrooms', 'Kitchens', 'Floors', 'ParkingArea', 'BuiltSince', 'NumVisits', 'TransactionID'
+    ]
+
+    for col in numeric_candidates:
+        if col in df.columns:
+            df[col] = _clean_and_coerce(df[col])
+
+    # Ensure TransactionID is integer if present
+    if 'TransactionID' in df.columns:
+        df['TransactionID'] = df['TransactionID'].fillna(method='ffill').astype('Int64')
+
     return df
 
 
@@ -38,34 +57,62 @@ def compute_kpis(df: pd.DataFrame) -> pd.DataFrame:
     kpis = {}
     kpis['SnapshotDate'] = datetime.now().isoformat()
     kpis['TotalTransactions'] = int(len(df))
-    kpis['TotalTransactionValue'] = float(df['TransactionValue'].sum())
-    kpis['AvgTransactionValue'] = float(df['TransactionValue'].mean())
-    kpis['MedianTransactionValue'] = float(df['TransactionValue'].median())
-    kpis['TotalMaintenanceExp'] = float(df['MaintenanceExp'].sum())
-    kpis['AvgNegotiationDays'] = float(df['NegotiationDays'].mean())
-    kpis['AvgClosingDays'] = float(df['ClosingDays'].mean())
+    # Safe numeric access with defaults
+    def _safe_agg(series, agg='sum'):
+        if series is None:
+            return 0.0
+        try:
+            if agg == 'sum':
+                return float(series.sum())
+            if agg == 'mean':
+                return float(series.mean())
+            if agg == 'median':
+                return float(series.median())
+        except Exception:
+            return 0.0
+
+    tx = df['TransactionValue'] if 'TransactionValue' in df.columns else None
+    maint = df['MaintenanceExp'] if 'MaintenanceExp' in df.columns else None
+    neg = df['NegotiationDays'] if 'NegotiationDays' in df.columns else None
+    close = df['ClosingDays'] if 'ClosingDays' in df.columns else None
+
+    kpis['TotalTransactionValue'] = _safe_agg(tx, 'sum')
+    kpis['AvgTransactionValue'] = _safe_agg(tx, 'mean')
+    kpis['MedianTransactionValue'] = _safe_agg(tx, 'median')
+    kpis['TotalMaintenanceExp'] = _safe_agg(maint, 'sum')
+    kpis['AvgNegotiationDays'] = _safe_agg(neg, 'mean')
+    kpis['AvgClosingDays'] = _safe_agg(close, 'mean')
 
     # Top 5 agents by TransactionValue
-    if 'Position' in df.columns:
-        top_agents = (
-            df.groupby('Position')['TransactionValue']
-            .sum()
-            .sort_values(ascending=False)
-            .head(5)
-            .reset_index()
-        )
+    if 'Position' in df.columns and tx is not None:
+        try:
+            top_agents = (
+                df.groupby('Position')['TransactionValue']
+                .sum()
+                .sort_values(ascending=False)
+                .head(5)
+                .reset_index()
+            )
+        except Exception:
+            top_agents = pd.DataFrame()
     else:
         top_agents = pd.DataFrame()
 
     # Top 5 locations by number of transactions
-    top_locations = (
-        df.groupby(['State', 'City'])['TransactionID']
-        .count()
-        .sort_values(ascending=False)
-        .head(5)
-        .reset_index()
-        .rename(columns={'TransactionID': 'Transactions'})
-    )
+    if 'State' in df.columns and 'City' in df.columns and 'TransactionID' in df.columns:
+        try:
+            top_locations = (
+                df.groupby(['State', 'City'])['TransactionID']
+                .count()
+                .sort_values(ascending=False)
+                .head(5)
+                .reset_index()
+                .rename(columns={'TransactionID': 'Transactions'})
+            )
+        except Exception:
+            top_locations = pd.DataFrame()
+    else:
+        top_locations = pd.DataFrame()
 
     kpis_df = pd.DataFrame([kpis])
     # Save KPI artifacts for Power BI
@@ -182,4 +229,6 @@ if __name__ == '__main__':
     try:
         run_all()
     except Exception as e:
-        print('Error running analytics:', e)
+        import traceback
+        print('Error running analytics:')
+        traceback.print_exc()
