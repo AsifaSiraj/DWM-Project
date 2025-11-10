@@ -7,8 +7,7 @@
 4. [ETL Process](#etl-process)
 5. [Data Warehouse](#data-warehouse)
 6. [Dashboard and Visualization](#dashboard-and-visualization)
-7. [Automation with Pabbly Connect](#automation-with-pabbly-connect)
-8. [Future Updates](#future-updates)
+7. [Future Updates](#future-updates)
 
 ## Project Overview
 This project involves building a Data Warehouse (DWH) for a Real-Estate Management Company which is then specifically used to evaluate agents' performance based on the transactions managed and carried out by them. The company facilitates property transactions by connecting property owners with potential clients for purchase or rental. The company allocates agents to market properties, arrange viewings, negotiate terms, and carry out the transaction process. It also handles maintenance and repairs of properties on behalf of their owners.
