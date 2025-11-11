@@ -2420,3 +2420,13 @@ visit_id,property_id,visit_date,client_id,description
 8,374,6/30/2021,429,error: undefined method `first' for nil:NilClass
 9,771,11/25/2021,684,error: undefined method `first' for nil:NilClass
 10,420,8/11/2024,232,error: undefined method `first' for nil:NilClass
+1,877,1/4/2019,815,error: undefined method `first' for nil:NilClass
+2,393,12/9/2021,420,error: undefined method `first' for nil:NilClass
+3,424,11/21/2024,325,error: undefined method `first' for nil:NilClass
+4,940,11/30/2019,366,error: undefined method `first' for nil:NilClass
+5,657,4/22/2021,708,error: undefined method `first' for nil:NilClass
+6,357,6/18/2020,134,error: undefined method `first' for nil:NilClass
+7,2,11/12/2019,320,error: undefined method `first' for nil:NilClass
+8,891,9/4/2020,262,error: undefined method `first' for nil:NilClass
+9,289,6/8/2023,862,error: undefined method `first' for nil:NilClass
+10,824,7/21/2019,12,error: undefined method `first' for nil:NilClass
