@@ -7,9 +7,9 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "PG Local",
-            "database": "postgres",
-            "password": "asifa123",
-            "username": "postgres"
+            "database": "Real-Estate-Management",
+            "username": "postgres",
+            "password": "asifa123"
         }
     ]
 }

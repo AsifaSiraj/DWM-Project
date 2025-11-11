@@ -1,0 +1,11 @@
+ListingID,ListingType,NumVisits
+1,Sale,4
+2,Sale,2
+3,Sale,3
+4,Rental,0
+5,Sale,1
+6,Rental,1
+7,Rental,2
+8,Sale,0
+9,Rental,3
+10,Rent,2
