@@ -1,10 +1,10 @@
 from github import Github, Auth
 
 # GitHub Token (keep confidential)
-github_token = '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'
+github_token = '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'
 
 # GitHub configuration
-repo_name = 'DWM-Project'
+repo_name = 'AsifaSiraj/DWM-Project'
 facttable_folder = "E2E_DWH_Pipeline/Fact Table Snapshot"
 
 def upload_fact_table(file_content, file_name):

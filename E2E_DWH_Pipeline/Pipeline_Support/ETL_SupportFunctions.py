@@ -166,12 +166,40 @@ def correct_dtypes(dataframes):
 
 # Data Cleaning helpers
 def knn_impute(df):
-    # Only apply to numeric df
+    """
+    Safe KNN imputation for numeric columns only.
+    Skips non-numeric or all-NaN columns to prevent shape mismatch.
+    """
+    import numpy as np
+    import pandas as pd
+    from sklearn.impute import KNNImputer
+
+    # If no columns, return as-is
     if df.shape[1] == 0:
         return df
+
+    # Keep only numeric columns
+    numeric_df = df.select_dtypes(include=[np.number])
+
+    # Drop columns that are completely NaN
+    non_empty_cols = numeric_df.columns[numeric_df.notna().any()].tolist()
+    numeric_df = numeric_df[non_empty_cols]
+
+    if numeric_df.empty:
+        # No valid numeric columns to impute
+        return df
+
     imputer = KNNImputer()
-    imputed_array = imputer.fit_transform(df)
-    return pd.DataFrame(imputed_array, columns=df.columns, index=df.index)
+    imputed_array = imputer.fit_transform(numeric_df)
+
+    # Create imputed DataFrame with correct shape
+    imputed_df = pd.DataFrame(imputed_array, columns=numeric_df.columns, index=df.index)
+
+    # Replace imputed numeric columns back in the original df
+    df[numeric_df.columns] = imputed_df[numeric_df.columns]
+
+    return df
+
 
 def mode_impute(df):
     for col in df.columns:
@@ -387,98 +415,53 @@ def create_listing_dim(property, visit):
     listing_dim['NumVisits'] = listing_dim['NumVisits'].astype(int)
     return listing_dim
 
+# Creating Fact Table
 def create_fact_trans(sale, rent, maintenance, property, commission, visit, start_date, end_date, dimdate, dimloc, dimagent, dimprodet, dimlisting):
-    # combine sale and rent
-    sale = sale.copy() if sale is not None else pd.DataFrame()
-    rent = rent.copy() if rent is not None else pd.DataFrame()
-    sale['TransactionType'] = 'Sale'
-    rent['TransactionType'] = 'Rent'
-    transactions = pd.concat([sale, rent], ignore_index=True, sort=False)
+    transactions=pd.concat([sale.assign(TransactionType='Sale'),rent.assign(TransactionType='Rent')], ignore_index=True)
 
-    # choose transaction date and amount depending on type
-    transactions['TransactionDate'] = transactions.get('sale_date')
-    transactions.loc[transactions['TransactionType'] == 'Rent', 'TransactionDate'] = transactions.loc[transactions['TransactionType'] == 'Rent', 'agreement_date']
-    transactions['TransactionAmount'] = transactions.get('sale_amount')
-    transactions.loc[transactions['TransactionType'] == 'Rent', 'TransactionAmount'] = transactions.loc[transactions['TransactionType'] == 'Rent', 'rent_amount']
+    transactions['TransactionDate']=transactions['sale_date']
+    transactions.loc[transactions['TransactionType']=='Rent','TransactionDate']=transactions['agreement_date']
+    transactions['TransactionAmount']=transactions['sale_amount']
+    transactions.loc[transactions['TransactionType']=='Rent','TransactionAmount']=transactions['rent_amount']
+    transactions.drop(['sale_date','agreement_date','sale_amount','rent_amount'],axis=1,inplace=True)
+    
+    transactions=pd.merge(transactions, property[['property_id','asking_amount']], on='property_id', how='left')
 
-    # drop date/amount raw columns if exist
-    for c in ['sale_date', 'agreement_date', 'sale_amount', 'rent_amount']:
-        if c in transactions.columns:
-            transactions.drop(columns=[c], inplace=True, errors='ignore')
+    maintenance_exp=maintenance[['property_id','cost']].groupby('property_id').sum()
+    transactions=pd.merge(transactions, maintenance_exp, on='property_id', how='left')
+    transactions['cost']=transactions['cost'].fillna(0).astype(int)
+    
+    transactions=pd.merge(transactions, commission[['commission_id', 'commission_rate', 'commission_amount']], on='commission_id', how='left')
+    
+    transactions=pd.merge(transactions, property[['property_id', 'listing_date']], on='property_id', how='left')
+    
+    last_visit=visit[['property_id','visit_date']].groupby('property_id').max()
+    transactions=pd.merge(transactions, last_visit, on='property_id', how='left')
+    transactions['NegotiationDays']=(transactions['TransactionDate'] - transactions['visit_date']).dt.days
+    transactions['NegotiationDays']=transactions['NegotiationDays'].fillna(0).astype(int)
+    transactions['ClosingDays']=(transactions['TransactionDate'] - transactions['listing_date']).dt.days
+    
+    transactions=transactions[(transactions['TransactionDate']>=pd.Timestamp(start_date)) & (transactions['TransactionDate']<=pd.Timestamp(end_date))]
+    transactions=transactions[['property_id','TransactionDate','TransactionAmount','asking_amount','cost','commission_rate','commission_amount','NegotiationDays','ClosingDays']]
+    
+    transactions=pd.merge(transactions,property[['property_id','address_id','agent_id','feature_id']],on='property_id',how='left')
+    transactions.rename(columns={'TransactionDate':'Date'},inplace=True)
+    transactions=pd.merge(transactions,dimdate[['Date','DateID']],on='Date',how='left').drop(['Date'],axis=1)
+    transactions=pd.merge(transactions,dimloc[['address_id','LocationID']],on='address_id',how='left').drop(['address_id'],axis=1)
+    transactions=pd.merge(transactions,dimagent[['agent_id','AgentID']],on='agent_id',how='left').drop(['agent_id'],axis=1)
+    transactions.rename(columns={'feature_id':'PropertyDetailsID'},inplace=True)
+    transactions=pd.merge(transactions,dimprodet[['PropertyDetailsID']],on='PropertyDetailsID',how='left')
+    transactions=pd.merge(transactions,dimlisting[['property_id','ListingID']],on='property_id',how='left').drop(['property_id'],axis=1)
+    transactions.rename(columns={'TransactionAmount':'TransactionValue','asking_amount':'AskedAmount','cost':'MaintenanceExp','commission_rate':'CommissionRate',
+                                 'commission_amount':'CommissionValue'},inplace=True)
+    
+    transactions['NegotiationDays']=transactions['NegotiationDays'].apply(lambda x: max(x, 0))
+    transactions['ClosingDays']=transactions['ClosingDays'].apply(lambda x: max(x, 0))
 
-    # merge asking_amount from property
-    if 'property_id' in property.columns and 'asking_amount' in property.columns:
-        transactions = pd.merge(transactions, property[['property_id', 'asking_amount']], on='property_id', how='left')
-
-    # maintenance cost per property
-    if 'property_id' in maintenance.columns and 'cost' in maintenance.columns:
-        maintenance_exp = maintenance[['property_id', 'cost']].groupby('property_id').sum().reset_index()
-        transactions = pd.merge(transactions, maintenance_exp, on='property_id', how='left')
-        transactions['cost'] = transactions['cost'].fillna(0)
-
-    # merge commission fields
-    if 'commission_id' in commission.columns:
-        transactions = pd.merge(transactions, commission[['commission_id', 'commission_rate', 'commission_amount']], on='commission_id', how='left')
-
-    # merge listing_date
-    if 'property_id' in property.columns and 'listing_date' in property.columns:
-        transactions = pd.merge(transactions, property[['property_id', 'listing_date']], on='property_id', how='left')
-
-    # last visit
-    if 'property_id' in visit.columns and 'visit_date' in visit.columns:
-        last_visit = visit[['property_id', 'visit_date']].groupby('property_id').max().reset_index()
-        transactions = pd.merge(transactions, last_visit, on='property_id', how='left')
-
-    # compute negotiation and closing days safely
-    if 'TransactionDate' in transactions.columns and 'visit_date' in transactions.columns:
-        transactions['NegotiationDays'] = (pd.to_datetime(transactions['TransactionDate']) - pd.to_datetime(transactions['visit_date'])).dt.days
-        transactions['NegotiationDays'] = transactions['NegotiationDays'].fillna(0).apply(lambda x: max(int(x), 0))
-    else:
-        transactions['NegotiationDays'] = 0
-
-    if 'TransactionDate' in transactions.columns and 'listing_date' in transactions.columns:
-        transactions['ClosingDays'] = (pd.to_datetime(transactions['TransactionDate']) - pd.to_datetime(transactions['listing_date'])).dt.days
-        transactions['ClosingDays'] = transactions['ClosingDays'].fillna(0).apply(lambda x: max(int(x), 0))
-    else:
-        transactions['ClosingDays'] = 0
-
-    # filter by date range
-    if 'TransactionDate' in transactions.columns:
-        transactions = transactions[(pd.to_datetime(transactions['TransactionDate']) >= pd.Timestamp(start_date)) &
-                                    (pd.to_datetime(transactions['TransactionDate']) <= pd.Timestamp(end_date))]
-
-    # select relevant columns, then merge dimension ids
-    transactions = transactions[['property_id', 'TransactionDate', 'TransactionAmount', 'asking_amount', 'cost', 'commission_rate', 'commission_amount', 'NegotiationDays', 'ClosingDays']]
-
-    # merge property attributes
-    if 'property_id' in property.columns:
-        transactions = pd.merge(transactions, property[['property_id', 'address_id', 'agent_id', 'feature_id']], on='property_id', how='left')
-
-    transactions.rename(columns={'TransactionDate': 'Date'}, inplace=True)
-    if 'Date' in transactions.columns and 'Date' in dimdate.columns:
-        transactions = pd.merge(transactions, dimdate[['Date', 'DateID']], on='Date', how='left').drop(columns=['Date'], errors='ignore')
-    if 'address_id' in transactions.columns and 'address_id' in dimloc.columns:
-        transactions = pd.merge(transactions, dimloc[['address_id', 'LocationID']], on='address_id', how='left').drop(columns=['address_id'], errors='ignore')
-    if 'agent_id' in transactions.columns and 'agent_id' in dimagent.columns:
-        transactions = pd.merge(transactions, dimagent[['agent_id', 'AgentID']], on='agent_id', how='left').drop(columns=['agent_id'], errors='ignore')
-
-    transactions.rename(columns={'feature_id': 'PropertyDetailsID'}, inplace=True)
-    if 'PropertyDetailsID' in transactions.columns and 'PropertyDetailsID' in dimprodet.columns:
-        transactions = pd.merge(transactions, dimprodet[['PropertyDetailsID']], on='PropertyDetailsID', how='left')
-
-    if 'property_id' in dimlisting.columns:
-        transactions = pd.merge(transactions, dimlisting[['property_id', 'ListingID']], on='property_id', how='left').drop(columns=['property_id'], errors='ignore')
-
-    transactions.rename(columns={'TransactionAmount': 'TransactionValue', 'asking_amount': 'AskedAmount', 'cost': 'MaintenanceExp',
-                                 'commission_rate': 'CommissionRate', 'commission_amount': 'CommissionValue'}, inplace=True)
-
-    transactions['TransactionID'] = range(1, len(transactions) + 1)
-    keep_cols = ['TransactionID', 'DateID', 'LocationID', 'AgentID', 'PropertyDetailsID', 'ListingID', 'MaintenanceExp', 'AskedAmount', 'TransactionValue',
-                 'CommissionRate', 'CommissionValue', 'NegotiationDays', 'ClosingDays']
-    # keep only existing subset
-    existing_keep = [c for c in keep_cols if c in transactions.columns]
-    transactions = transactions[existing_keep].copy()
-
+    transactions['TransactionID']=range(1,len(transactions)+1)
+    transactions=transactions[['TransactionID','DateID','LocationID','AgentID','PropertyDetailsID','ListingID','MaintenanceExp','AskedAmount','TransactionValue',
+                               'CommissionRate','CommissionValue','NegotiationDays','ClosingDays']]
+    
     return transactions
 
 def create_star_schema(sale, rent, maintenance, property, commission, visit, features, address, agent, start_date, end_date):

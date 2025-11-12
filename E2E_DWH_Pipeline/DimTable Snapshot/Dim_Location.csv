@@ -922,8 +922,9 @@ LocationID,State,City,ZipCode
 921,Alabama,Birmingham,35210
 922,Georgia,Savannah,20420
 923,Mississippi,Jackson,39204
-924,NY,New York,10001
-925,CA,Los Angeles,90001
-926,IL,Chicago,60601
-927,TX,Houston,77001
-928,FL,Miami,33101
+924,Texas,Washington,20420
+925,NY,New York,10001
+926,CA,Los Angeles,90001
+927,IL,Chicago,60601
+928,TX,Houston,77001
+929,FL,Miami,33101

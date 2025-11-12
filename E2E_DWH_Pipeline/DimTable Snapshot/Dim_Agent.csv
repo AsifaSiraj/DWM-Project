@@ -179,6 +179,8 @@ AgentID,Gender,AgeCat,AgentSince,Position
 178,Female,Senior,1,Real Estate Agent
 179,Male,Adult,1,Leasing Consultant
 180,Female,Senior,1,Broker Associate
-181,Female,Adult,10,Senior Agent
-182,Male,Adult,9,Junior Agent
-183,Female,Adult,7,Listing Agent
+181,Female,Young,1,Broker Associate
+182,Female,Young,0,Broker Associate
+183,Female,Adult,10,Senior Agent
+184,Male,Adult,9,Junior Agent
+185,Female,Adult,7,Listing Agent

@@ -60,9 +60,9 @@ def etl_master(source="hybrid", db_params=None):
         dataframes = {}
         for tbl in tables:
             if tbl in db_data and tbl in csv_data:
-                # ✅ Use pd.concat instead of deprecated .append()
+                
                 merged = pd.concat([csv_data[tbl], db_data[tbl]], ignore_index=True)
-                # ⚠️ Do NOT remove duplicates for now
+                
                 dataframes[tbl] = merged.reset_index(drop=True)
             elif tbl in csv_data:
                 dataframes[tbl] = csv_data[tbl]
@@ -94,7 +94,7 @@ def etl_master(source="hybrid", db_params=None):
         address=dataframes['address'],
         agent=dataframes['agent'],
         start_date='2022-01-01',
-        end_date='2024-12-31'
+        end_date='2025-12-31'
     )
     print("✅ Star schema generated successfully.")
 

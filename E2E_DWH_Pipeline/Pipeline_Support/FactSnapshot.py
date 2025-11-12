@@ -1,7 +1,19 @@
 import pandas as pd
 import os
+from sqlalchemy import create_engine
 
-def create_fact_snapshot(Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction):
+def create_fact_snapshot(
+    Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction
+):
+    print("🧩 Checking Fact_Transaction date coverage...")
+    print(Fact_Transaction[['DateID']].head())
+    print("Unique DateIDs:", Fact_Transaction['DateID'].nunique())
+
+    # If you still have TransactionDate column
+    if 'TransactionDate' in Fact_Transaction.columns:
+        print("Date Range:", Fact_Transaction['TransactionDate'].min(), "→", Fact_Transaction['TransactionDate'].max())
+
+    
     # 🧩 Merge all dimension tables into one fact snapshot
     Fact_Snap = pd.merge(Fact_Transaction, Dim_Date, on='DateID', how='left').drop(['DateID'], axis=1)
     Fact_Snap = pd.merge(Fact_Snap, Dim_Location, on='LocationID', how='left').drop(['LocationID'], axis=1)
@@ -33,11 +45,24 @@ def create_fact_snapshot(Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails,
     fact_snapshot_path = os.path.join(fact_snapshot_dir, "Fact_Snapshot.csv")
     Fact_Snap.to_csv(fact_snapshot_path, index=False)
 
-    # ✅ Also save the base Fact_Transaction table separately (optional best practice)
+    # ✅ Also save the base Fact_Transaction table separately (same as before)
     fact_transaction_path = os.path.join(fact_snapshot_dir, "Fact_Transaction.csv")
     Fact_Transaction.to_csv(fact_transaction_path, index=False)
 
     print(f"✅ Fact Snapshot saved successfully at:\n{fact_snapshot_path}")
     print(f"✅ Fact_Transaction table saved at:\n{fact_transaction_path}")
+
+    # 🧩 NEW STEP — Upload both to PostgreSQL
+    try:
+        engine = create_engine("postgresql+psycopg2://postgres:asifa123@localhost:5432/Real-Estate-Management")
+
+        # Upload both fact tables
+        Fact_Snap.to_sql("fact_snapshot", engine, if_exists="replace", index=False)
+        Fact_Transaction.to_sql("fact_transaction", engine, if_exists="replace", index=False)
+
+        print("✅ Both Fact Snapshot and Fact Transaction uploaded to PostgreSQL successfully!")
+
+    except Exception as e:
+        print("❌ Error uploading to PostgreSQL:", e)
 
     return Fact_Snap
