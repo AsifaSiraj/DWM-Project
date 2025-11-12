@@ -1,0 +1,641 @@
+TransactionID,Date,Year,Quarter,Month,Week,Day,State,City,ZipCode,Gender,AgeCat,AgentSince,Position,LotArea,Bedrooms,Bathrooms,Kitchens,Floors,ParkingArea,BuiltSince,Condition,ListingType,NumVisits,MaintenanceExp,AskedAmount,TransactionValue,CommissionRate,CommissionValue,NegotiationDays,ClosingDays
+1,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+1,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+2,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+2,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+3,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+3,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+4,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+4,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+5,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+5,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+6,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+6,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+7,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+7,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+8,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+8,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+9,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+9,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+10,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+10,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,874
+11,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+11,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+12,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+12,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+13,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+13,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+14,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+14,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+15,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+15,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+16,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+16,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+17,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+17,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+18,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+18,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+19,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+19,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+20,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+20,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,4.2,21619.0,5,36
+21,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+21,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+22,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+22,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+23,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+23,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+24,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+24,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+25,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+25,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+26,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+26,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+27,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+27,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+28,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+28,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+29,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+29,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+30,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+30,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,874
+31,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+31,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+32,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+32,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+33,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+33,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+34,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+34,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+35,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+35,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+36,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+36,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+37,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+37,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+38,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+38,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+39,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+39,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+40,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+40,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,471216.0,450000.0,0.05,22500.0,5,36
+41,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+41,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+42,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+42,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+43,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+43,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+44,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+44,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+45,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+45,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+46,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+46,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+47,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+47,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+48,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+48,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+49,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+49,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+50,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+50,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,874
+51,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+51,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+52,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+52,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+53,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+53,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+54,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+54,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+55,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+55,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+56,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+56,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+57,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+57,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+58,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+58,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+59,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+59,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+60,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+60,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,4.2,21619.0,5,36
+61,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+61,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+62,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+62,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+63,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+63,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+64,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+64,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+65,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+65,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+66,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+66,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+67,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+67,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+68,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+68,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+69,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+69,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+70,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+70,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,874
+71,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+71,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+72,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+72,2023-06-20,2023,2,6,25,20,California,Fresno,93750,Male,Middle Aged,4,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+73,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+73,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+74,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+74,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+75,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+75,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+76,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+76,2023-06-20,2023,2,6,25,20,California,San Francisco,94142,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+77,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+77,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+78,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+78,2023-06-20,2023,2,6,25,20,NY,New York,10001,Male,Middle Aged,5,Property Manager,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+79,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+79,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+80,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,3418,4,4,2,2,473,44,Poor,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+80,2023-06-20,2023,2,6,25,20,NY,New York,10001,Female,Adult,10,Senior Agent,2500,3,2,1,2,300,10,Excellent,Sale,4,500.0,450000.0,450000.0,0.05,22500.0,5,36
+81,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+81,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+82,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+82,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+83,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+83,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+84,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+84,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+85,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+85,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+86,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+86,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+87,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+87,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+88,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+88,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+89,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+89,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+90,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+90,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,1178
+91,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+91,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+92,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+92,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+93,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+93,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+94,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+94,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+95,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+95,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+96,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+96,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+97,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+97,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+98,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+98,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+99,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+99,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+100,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+100,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,2.6,9710.0,15,41
+101,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+101,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+102,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+102,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+103,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+103,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+104,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+104,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+105,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+105,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+106,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+106,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+107,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+107,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+108,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+108,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+109,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+109,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+110,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+110,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,1178
+111,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+111,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+112,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+112,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+113,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+113,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+114,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+114,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+115,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+115,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+116,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+116,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+117,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+117,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+118,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+118,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+119,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+119,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+120,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+120,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,595328.0,380000.0,0.04,15200.0,15,41
+121,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+121,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+122,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+122,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+123,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+123,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+124,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+124,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+125,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+125,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+126,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+126,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+127,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+127,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+128,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+128,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+129,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+129,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+130,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+130,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,1178
+131,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+131,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+132,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+132,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+133,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+133,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+134,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+134,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+135,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+135,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+136,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+136,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+137,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+137,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+138,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+138,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+139,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+139,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+140,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+140,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,2.6,9710.0,15,41
+141,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+141,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+142,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+142,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+143,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+143,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+144,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+144,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+145,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+145,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+146,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+146,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+147,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+147,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+148,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+148,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+149,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+149,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+150,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+150,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,1178
+151,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+151,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+152,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+152,2023-09-20,2023,3,9,38,20,Alabama,Gadsden,35905,Female,Senior,5,Broker Associate,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+153,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+153,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+154,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+154,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+155,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+155,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+156,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+156,2023-09-20,2023,3,9,38,20,Oklahoma,Oklahoma City,73179,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+157,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+157,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+158,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+158,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Middle Aged,5,Listing Coordinator,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+159,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+159,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+160,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,797,1,1,1,1,52,53,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+160,2023-09-20,2023,3,9,38,20,IL,Chicago,60601,Female,Adult,7,Listing Agent,1800,2,1,1,1,200,13,Average,Sale,3,10165.0,380000.0,380000.0,0.04,15200.0,15,41
+161,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+161,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+162,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+162,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+163,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+163,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+164,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+164,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+165,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+165,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+166,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+166,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+167,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+167,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+168,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+168,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+169,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+169,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+170,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+170,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+171,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+171,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+172,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+172,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+173,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+173,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+174,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+174,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+175,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+175,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+176,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+176,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+177,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+177,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+178,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+178,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+179,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+179,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+180,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+180,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,466
+181,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+181,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+182,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+182,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+183,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+183,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+184,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+184,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+185,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+185,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+186,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+186,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+187,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+187,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+188,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+188,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+189,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+189,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+190,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+190,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+191,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+191,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+192,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+192,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+193,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+193,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+194,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+194,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+195,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+195,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+196,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+196,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+197,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+197,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+198,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+198,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+199,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+199,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+200,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+200,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,3.2,34562.0,5,26
+201,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+201,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+202,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+202,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+203,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+203,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+204,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+204,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+205,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+205,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+206,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+206,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+207,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+207,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+208,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+208,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+209,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+209,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+210,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+210,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+211,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+211,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+212,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+212,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+213,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+213,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+214,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+214,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+215,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+215,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+216,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+216,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+217,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+217,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+218,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+218,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+219,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+219,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+220,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+220,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,466
+221,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+221,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+222,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+222,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+223,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+223,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+224,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+224,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+225,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+225,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+226,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+226,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+227,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+227,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+228,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+228,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+229,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+229,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+230,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+230,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+231,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+231,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+232,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+232,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+233,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+233,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+234,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+234,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+235,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+235,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+236,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+236,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+237,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+237,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+238,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+238,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+239,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+239,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+240,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+240,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,362377.0,2500.0,0.03,75.0,5,26
+241,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+241,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+242,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+242,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+243,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+243,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+244,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+244,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+245,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+245,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+246,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+246,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+247,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+247,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+248,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+248,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+249,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+249,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+250,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+250,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+251,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+251,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+252,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+252,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+253,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+253,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+254,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+254,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+255,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+255,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+256,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+256,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+257,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+257,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+258,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+258,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+259,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+259,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+260,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+260,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,466
+261,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+261,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+262,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+262,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+263,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+263,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+264,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+264,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+265,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+265,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+266,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+266,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+267,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+267,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+268,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+268,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+269,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+269,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+270,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+270,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+271,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+271,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+272,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+272,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+273,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+273,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+274,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+274,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+275,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+275,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+276,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+276,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+277,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+277,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+278,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+278,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+279,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+279,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+280,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+280,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,3.2,34562.0,5,26
+281,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+281,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+282,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+282,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+283,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+283,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+284,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+284,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+285,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+285,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+286,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+286,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+287,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+287,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+288,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+288,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+289,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+289,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+290,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+290,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+291,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+291,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+292,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+292,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+293,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+293,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+294,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+294,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+295,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+295,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+296,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+296,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+297,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+297,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+298,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+298,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+299,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+299,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+300,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+300,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,466
+301,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+301,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+302,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+302,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+303,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+303,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+304,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+304,2023-08-15,2023,3,8,33,15,California,Corona,20420,Female,Senior,4,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+305,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+305,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+306,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+306,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+307,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+307,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+308,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+308,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+309,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+309,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+310,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+310,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+311,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+311,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+312,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+312,2023-08-15,2023,3,8,33,15,Texas,Huntsville,77343,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+313,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+313,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+314,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+314,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+315,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+315,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+316,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+316,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Female,Middle Aged,3,Broker Associate,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+317,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+317,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+318,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+318,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+319,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+319,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Sale,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+320,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,2611,4,4,2,1,89,3,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26
+320,2023-08-15,2023,3,8,33,15,CA,Los Angeles,90001,Male,Adult,9,Junior Agent,3200,4,3,1,2,400,7,Excellent,Rent,2,700.0,2500.0,2500.0,0.03,75.0,5,26

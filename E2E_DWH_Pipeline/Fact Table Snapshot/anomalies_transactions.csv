@@ -1,0 +1,1 @@
+TransactionID,Date,Year,Quarter,Month,Week,Day,State,City,ZipCode,Gender,AgeCat,AgentSince,Position,LotArea,Bedrooms,Bathrooms,Kitchens,Floors,ParkingArea,BuiltSince,Condition,ListingType,NumVisits,MaintenanceExp,AskedAmount,TransactionValue,CommissionRate,CommissionValue,NegotiationDays,ClosingDays,Anomaly
