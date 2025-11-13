@@ -1,7 +1,7 @@
 from github import Github, Auth
 
 # GitHub Token (keep confidential)
-github_token = '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'
+github_token = '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'
 
 # GitHub configuration
 repo_name = 'AsifaSiraj/DWM-Project'

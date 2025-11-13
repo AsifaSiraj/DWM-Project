@@ -6,6 +6,9 @@ from io import StringIO
 from sklearn.impute import KNNImputer
 from datetime import datetime
 from sqlalchemy import create_engine
+import warnings
+
+
 
 def fetch_from_postgres(table_names, db_name, user, password, host="localhost", port=5432):
     """
@@ -31,6 +34,7 @@ def fetch_datasets(csv_files, base_url):
         response = requests.get(csv_url)
         if response.status_code == 200:
             df = pd.read_csv(StringIO(response.text))
+            
             dataframes[file.lower()] = df
         else:
             raise Exception(f"Failed to fetch {file}.csv from {csv_url} (status {response.status_code})")
@@ -140,7 +144,8 @@ def correct_dtypes(dataframes):
             dataframes['commission']['commission_amount'] = to_numeric_safe(dataframes['commission']['commission_amount'], fillna=np.nan)
         if 'commission_rate' in dataframes['commission'].columns:
             dataframes['commission']['commission_rate'] = to_numeric_safe(dataframes['commission']['commission_rate'], fillna=np.nan)
-
+  
+    warnings.filterwarnings("ignore", message=" You are merging on int and float columns where the float values are not equal to their int representation.", category=UserWarning)
     # Sale
     if 'sale' in dataframes:
         if 'sale_date' in dataframes['sale'].columns:
@@ -327,7 +332,11 @@ def fill_mv(dataframes):
 
     return dataframes
 
-
+warnings.filterwarnings(
+    "ignore",
+    message="You are merging on int and float columns where the float values are not equal to their int representation.",
+    category=UserWarning
+)
 # --- Dimensional creation functions (kept your logic, safer casts) ---
 def create_date_dim(start_date, end_date):
     date_range = pd.date_range(start=start_date, end=end_date, freq='D')

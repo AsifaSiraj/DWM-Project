@@ -5,13 +5,13 @@ from sqlalchemy import create_engine
 def create_fact_snapshot(
     Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction
 ):
-    print("🧩 Checking Fact_Transaction date coverage...")
-    print(Fact_Transaction[['DateID']].head())
-    print("Unique DateIDs:", Fact_Transaction['DateID'].nunique())
+    # print("🧩 Checking Fact_Transaction date coverage...")
+    # print(Fact_Transaction[['DateID']].head())
+    # print("Unique DateIDs:", Fact_Transaction['DateID'].nunique())
 
-    # If you still have TransactionDate column
-    if 'TransactionDate' in Fact_Transaction.columns:
-        print("Date Range:", Fact_Transaction['TransactionDate'].min(), "→", Fact_Transaction['TransactionDate'].max())
+    # # If you still have TransactionDate column
+    # if 'TransactionDate' in Fact_Transaction.columns:
+    #     print("Date Range:", Fact_Transaction['TransactionDate'].min(), "→", Fact_Transaction['TransactionDate'].max())
 
     
     # 🧩 Merge all dimension tables into one fact snapshot

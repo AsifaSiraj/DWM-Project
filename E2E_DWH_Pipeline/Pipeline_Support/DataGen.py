@@ -9,7 +9,7 @@ from io import StringIO
 mockaroo_api_key = '7df0f660'  # Mockaroo API Key
 
 # ⚠️ Always store tokens securely in .env in production — for now, keep inline for local testing
-github_token = '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'  # Your GitHub PAT
+github_token = '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'  # Your GitHub PAT
 repo_name = 'AsifaSiraj/DWM-Project'  # e.g., username/repository
 dataset_folder = 'Database/Datasets'
 

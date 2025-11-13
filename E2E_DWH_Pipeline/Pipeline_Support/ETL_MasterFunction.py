@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import warnings
 from sqlalchemy import create_engine
 from Pipeline_Support.ETL_SupportFunctions import (
     fetch_datasets, fetch_from_postgres, correct_dtypes,
@@ -31,24 +32,7 @@ def etl_master(source="hybrid", db_params=None):
         if not db_params:
             raise ValueError("db_params must be provided for DB source.")
         dataframes = fetch_from_postgres(tables, **db_params)
-
-    # elif source == "hybrid":
-    #     print("🔄 Fetching from both CSV + PostgreSQL...")
-    #     if not db_params:
-    #         raise ValueError("db_params must be provided for hybrid mode.")
-    #     csv_data = fetch_datasets(tables, base_url)
-    #     db_data = fetch_from_postgres(tables, **db_params)
         
-    #     # Merge both — DB overrides CSV when same ID present
-    #     dataframes = {}
-    #     for tbl in tables:
-    #         if tbl in db_data and tbl in csv_data:
-    #             merged = pd.concat([csv_data[tbl], db_data[tbl]], ignore_index=True).drop_duplicates()
-    #             dataframes[tbl] = merged.reset_index(drop=True)
-    #         elif tbl in csv_data:
-    #             dataframes[tbl] = csv_data[tbl]
-    #         elif tbl in db_data:
-    #             dataframes[tbl] = db_data[tbl]
     elif source == "hybrid":
         print("🔄 Fetching from both CSV + PostgreSQL...")
         if not db_params:
@@ -71,7 +55,7 @@ def etl_master(source="hybrid", db_params=None):
 
     else:
         raise ValueError("Invalid source. Use 'csv', 'db', or 'hybrid'.")
-
+   
     print("✅ Data ingestion complete.")
 
     # ---------- 2️⃣ Handle Missing Values ----------
