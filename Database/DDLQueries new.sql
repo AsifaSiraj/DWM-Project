@@ -267,3 +267,4 @@ select * from Contract;
 select * from Admin;
 select * from dim_propertydetails;
 select * from dim_agent;
+select * from fact_snapshot;

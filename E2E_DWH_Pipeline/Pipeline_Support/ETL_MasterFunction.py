@@ -1,13 +1,14 @@
 import os
 import pandas as pd
 import warnings
+import requests
 from sqlalchemy import create_engine
-from Pipeline_Support.ETL_SupportFunctions import (
+from .ETL_SupportFunctions import (
     fetch_datasets, fetch_from_postgres, correct_dtypes,
     fill_mv, create_star_schema
 )
 
-def etl_master(source="hybrid", db_params=None):
+def etl_master(source="hybrid", db_params=None, use_mockaroo=True):
     """
     ETL Master Function
     source: "csv", "db", or "hybrid"
@@ -16,6 +17,19 @@ def etl_master(source="hybrid", db_params=None):
       - "hybrid" = Merge both CSV + PostgreSQL data
     """
 
+    def combine_parts(*dfs):
+        """
+        Combines multiple DataFrames (CSV, DB, Mockaroo) with union of columns,
+        drops duplicate rows, and returns the merged DataFrame.
+        """
+        valid_dfs = [df for df in dfs if df is not None and not df.empty]
+        if not valid_dfs:
+            return pd.DataFrame()
+
+        combined = pd.concat(valid_dfs, axis=0, ignore_index=True)
+        combined = combined.loc[:, ~combined.columns.duplicated()]
+        combined = combined.drop_duplicates()
+        return combined
     # ---------- 1️⃣ Data Ingestion ----------
     tables = [
         'address', 'client', 'agent', 'owner', 'features', 'property',
@@ -34,24 +48,52 @@ def etl_master(source="hybrid", db_params=None):
         dataframes = fetch_from_postgres(tables, **db_params)
         
     elif source == "hybrid":
-        print("🔄 Fetching from both CSV + PostgreSQL...")
+        print("🔄 Fetching from CSV + Mockaroo + PostgreSQL...")
         if not db_params:
             raise ValueError("db_params must be provided for hybrid mode.")
 
         csv_data = fetch_datasets(tables, base_url)
         db_data = fetch_from_postgres(tables, **db_params)
 
+        # Attempt to fetch Mockaroo JSON for each table if API key is available
+        mock_data = {}
+        if use_mockaroo:
+            mockaroo_key = os.getenv('MOCKAROO_API_KEY', 'e0396780')
+            if mockaroo_key and mockaroo_key.strip():
+                print("🌱 MOCKAROO: API key present, attempting to fetch synthetic rows...")
+                for tbl in tables:
+                    try:
+                        url = f'https://my.api.mockaroo.com/{tbl}.json?key={mockaroo_key}'
+                        resp = requests.get(url, timeout=30)
+                        if resp.status_code == 200:
+                            payload = resp.json()
+                            # Ensure payload is a list of records
+                            if isinstance(payload, dict):
+                                payload = [payload]
+                            mock_df = pd.DataFrame(payload)
+                            if not mock_df.empty:
+                                mock_data[tbl] = mock_df
+                                print(f"Mockaroo: fetched {len(mock_df)} rows for '{tbl}'")
+                            else:
+                                print(f"Mockaroo: no rows returned for '{tbl}'")
+                        else:
+                            print(f"Mockaroo: skipped '{tbl}' (status {resp.status_code})")
+                    except Exception as e:
+                        print(f"Mockaroo: error fetching '{tbl}': {e}")
+            else:
+                print("🌱 MOCKAROO: no API key found in environment; skipping Mockaroo fetches")
+        else:
+            print("🌱 MOCKAROO: disabled by parameter; skipping Mockaroo fetches")
+
         dataframes = {}
         for tbl in tables:
-            if tbl in db_data and tbl in csv_data:
-                
-                merged = pd.concat([csv_data[tbl], db_data[tbl]], ignore_index=True)
-                
-                dataframes[tbl] = merged.reset_index(drop=True)
-            elif tbl in csv_data:
-                dataframes[tbl] = csv_data[tbl]
-            elif tbl in db_data:
-                dataframes[tbl] = db_data[tbl]
+            csv_df = csv_data.get(tbl) if isinstance(csv_data, dict) else None
+            db_df = db_data.get(tbl) if isinstance(db_data, dict) else None
+            mock_df = mock_data.get(tbl) if isinstance(mock_data, dict) else None
+
+            # combine_parts performs union-of-columns concat and drops exact duplicates
+            combined = combine_parts(csv_df, db_df, mock_df)
+            dataframes[tbl] = combined
 
     else:
         raise ValueError("Invalid source. Use 'csv', 'db', or 'hybrid'.")
@@ -113,12 +155,15 @@ def etl_master(source="hybrid", db_params=None):
     Fact_Transaction.to_sql('fact_transaction', engine, if_exists='replace', index=False)
     print("✅ Data successfully loaded into PostgreSQL!")
 
-    return (
-    Dim_Date,
-    Dim_Location,
-    Dim_Agent,
-    Dim_PropertyDetails,
-    Dim_Listing,
-    Fact_Transaction
-)
+    # Cache result so repeated calls in the same kernel return identical objects
+    _ETL_MASTER_RESULT = (
+        Dim_Date,
+        Dim_Location,
+        Dim_Agent,
+        Dim_PropertyDetails,
+        Dim_Listing,
+        Fact_Transaction,
+    )
+    _ETL_MASTER_RAN = True
+    return _ETL_MASTER_RESULT
 
