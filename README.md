@@ -22,30 +22,36 @@ This project implements a practical Data Warehouse solution for real-estate anal
 This repository contains an end-to-end implementation of a Data Warehouse for real-estate transactions. It ingests data from two primary sources: synthetic CSV datasets (generated via Mockaroo API) and an existing PostgreSQL OLTP database. These are consolidated into a star-schema DWH optimized for analytical queries and Power BI visualizations.
 
 **Primary Data Sources:**
-- CSV files obtained through the Mockaroo API (stored in `Database/Datasets/`)
+- Local CSV files (stored in `Database/Datasets/`)
 - PostgreSQL OLTP database (existing transactional system)
+- JSON data from Mockaroo API (when available, combined with CSV and PostgreSQL)
 
 **Project Flow:**
 ```
-Data Sources (CSV files via Mockaroo API + PostgreSQL OLTP) 
+Data Sources (Local CSV + PostgreSQL + JSON API) 
     ↓
-ETL Pipeline (Python) → Hybrid staging (duplicate/hybrid row handling) 
+CombineSources.py → ETL_MasterFunction.py (Hybrid Data Combination)
     ↓
-Data Warehouse (PostgreSQL) → Fact Transaction Table (Table B) 
+ETL_SupportFunctions.py (Data Processing & Transformations)
     ↓
-Fact Snapshot (FactSnapshot.py → Fact_Snapshot.csv) 
+Star Schema Creation (Dimensions + Fact Transaction)
     ↓
-Power BI Dashboard
+Data Loading → PostgreSQL DWH + CSV Files
+    ↓
+FactSnapshot.py → Fact_Snapshot.csv → PostgreSQL + CSV Export
+    ↓
+Power BI Dashboard (imports Fact_Snapshot.csv)
 ```
 
 **Key Repository Files:**
-- `Database/Datasets/` — Raw CSV files used as data sources (generated via Mockaroo API)
+- `Database/Datasets/` — Local CSV files (static data sources)
 - `Database/DDL Queries.sql` — SQL scripts for PostgreSQL database schema creation
 - `E2E_DWH_Pipeline/E2EPipelineExec.ipynb` — Complete pipeline demonstration notebook
-- `E2E_DWH_Pipeline/Pipeline_Support/DataGen.py` — Mockaroo data generation script
-- `E2E_DWH_Pipeline/Pipeline_Support/ETL_MasterFunction.py` — Main ETL orchestration
-- `E2E_DWH_Pipeline/Pipeline_Support/ETL_SupportFunctions.py` — ETL utility functions
+- `E2E_DWH_Pipeline/Pipeline_Support/CombineSources.py` — Combines CSV, PostgreSQL, and JSON data
+- `E2E_DWH_Pipeline/Pipeline_Support/ETL_MasterFunction.py` — Main ETL orchestration and data combination
+- `E2E_DWH_Pipeline/Pipeline_Support/ETL_SupportFunctions.py` — Data processing and transformation functions
 - `E2E_DWH_Pipeline/Pipeline_Support/FactSnapshot.py` — Fact snapshot generation
+- `E2E_DWH_Pipeline/DimTable Snapshot/` — Generated dimension table CSVs
 - `E2E_DWH_Pipeline/Fact Table Snapshot/Fact_Snapshot.csv` — Generated fact snapshot
 - `PowerBI Desktop Template/` — Power BI dashboard templates
 
@@ -66,14 +72,13 @@ Power BI Dashboard
 
 | Category | Tools / Technologies |
 |----------|---------------------|
-| Database | PostgreSQL |
-| ETL Pipeline | Python (pandas, SQLAlchemy) |
+| Database | PostgreSQL (OLTP Source + DWH Target) |
+| ETL Pipeline | Python (pandas, SQLAlchemy, requests) |
+| Data Processing | CombineSources.py, ETL_MasterFunction.py |
 | Data Modeling | Excel / Lucidchart |
 | Visualization | Power BI |
-| Data Generation | Mockaroo API (CSV files) |
+| Data Sources | Local CSV files, PostgreSQL, JSON API (optional) |
 | Version Control | GitHub |
-| API / Data Ingestion | Mockaroo API |
-| OLTP Source | PostgreSQL |
 
 ---
 
@@ -81,9 +86,9 @@ Power BI Dashboard
 
 ### 6.1 Architecture Diagram
 
-The system follows this data flow: **Mockaroo CSVs + PostgreSQL OLTP → ETL Script (Python) → PostgreSQL DWH Tables → Fact Snapshot (Fact_Snapshot.csv) → Power BI Dashboard**
+The system follows this data flow: **Local CSV + PostgreSQL + JSON API → CombineSources.py → ETL_MasterFunction.py → ETL_SupportFunctions.py → PostgreSQL DWH + CSV Export → FactSnapshot.py → Fact_Snapshot.csv (PostgreSQL + CSV) → Power BI Dashboard**
 
-Data flows from two primary sources through Python ETL processing into a PostgreSQL data warehouse, with final output as CSV snapshot for Power BI consumption.
+Data flows from three sources (local CSV files, PostgreSQL OLTP, and optional JSON API) through Python ETL processing, creates star schema in PostgreSQL, exports to CSV files, and generates fact snapshot for Power BI consumption.
 
 *(Architecture diagrams can be added to the repository and referenced here)*
 
@@ -108,9 +113,10 @@ Data flows from two primary sources through Python ETL processing into a Postgre
 ### 7.1 Implementation Steps
 
 **Extract:**
-- CSV files are pulled via the Mockaroo API (see `E2E_DWH_Pipeline/Pipeline_Support/DataGen.py`)
-- Copies are stored in the repository's `Database/Datasets/` folder
-- OLTP data is read from PostgreSQL database (second primary data source)
+- Local CSV files are loaded from `Database/Datasets/` folder
+- PostgreSQL OLTP data is fetched using connection parameters
+- Optional JSON data is fetched from Mockaroo API (when API key is available)
+- `CombineSources.py` combines all three data sources using union of columns and deduplication
 
 **Transform:**
 - **Data Cleaning:** Handle missing values using median imputation for numerical fields and default values for categorical fields
@@ -124,9 +130,10 @@ Data flows from two primary sources through Python ETL processing into a Postgre
 - **Key Generation:** Create surrogate keys for dimension tables and establish foreign key relationships
 
 **Load:**
-- Insert transformed rows into the DWH tables using SQLAlchemy (PostgreSQL)
-- A Fact Transaction Table (referred to internally as Table B) is constructed and uploaded to PostgreSQL
-- `FactSnapshot.py` combines dimensions and the fact table to build the exported fact snapshot (`Fact_Snapshot.csv`)
+- Dimension tables and Fact Transaction table are loaded into PostgreSQL using SQLAlchemy
+- Same data is also exported as CSV files to `E2E_DWH_Pipeline/DimTable Snapshot/` and `E2E_DWH_Pipeline/Fact Table Snapshot/`
+- `FactSnapshot.py` merges all dimensions with fact table and creates `Fact_Snapshot.csv`
+- Final fact snapshot is saved to both PostgreSQL and CSV for Power BI consumption
 
 ### 7.2 Key Files
 
@@ -135,19 +142,27 @@ Data flows from two primary sources through Python ETL processing into a Postgre
 - `E2E_DWH_Pipeline/Pipeline_Support/ETL_SupportFunctions.py` — Transformation utilities
 - `E2E_DWH_Pipeline/Pipeline_Support/FactSnapshot.py` — Fact snapshot generation
 
-### 7.3 Example Code Snippet
+### 8.3 Example Code Snippet
 
 ```python
-# Data Generation (from DataGen.py)
-from E2E_DWH_Pipeline.Pipeline_Support.DataGen import main
-main()  # Generates CSV files using Mockaroo API
-
 # ETL Pipeline Execution (from E2EPipelineExec.ipynb)
-from Pipeline_Support.ETL_MasterFunction import *
+from Pipeline_Support.ETL_MasterFunction import etl_master
 from Pipeline_Support.FactSnapshot import create_fact_snapshot
 
-# Load and transform data
-Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction = master_etl_function()
+# PostgreSQL connection parameters
+db_params = {
+    'host': 'localhost',
+    'database': 'Real-Estate-Management',
+    'user': 'postgres',
+    'password': 'asifa123'
+}
+
+# Run hybrid ETL (CSV + PostgreSQL + JSON)
+Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction = etl_master(
+    source="hybrid", 
+    db_params=db_params, 
+    use_mockaroo=True
+)
 
 # Create fact snapshot
 Fact_Snap = create_fact_snapshot(Dim_Date, Dim_Location, Dim_Agent, Dim_PropertyDetails, Dim_Listing, Fact_Transaction)
@@ -172,13 +187,19 @@ Logs and validation summaries are produced by the pipeline and can be found in t
 ## 9. Warehouse Deployment
 
 **Deployment Process:**
-- Schema and tables created using `Database/DDL Queries.sql` (PostgreSQL)
-- Data loaded via the Python ETL pipeline (`E2E_DWH_Pipeline/Pipeline_Support/ETL_MasterFunction.py`)
-- Fact snapshot generated using `FactSnapshot.py` and saved as `Fact_Snapshot.csv`
-- Power BI directly imports the `Fact_Snapshot.csv` file for dashboard creation and visualization
+- PostgreSQL database schema created using `Database/DDL Queries.sql`
+- Local CSV files loaded from `Database/Datasets/` folder
+- ETL pipeline (`ETL_MasterFunction.py`) combines CSV + PostgreSQL + JSON data sources
+- Star schema (dimensions + facts) created and loaded into PostgreSQL
+- Dimension and fact tables exported as CSV files to respective snapshot folders
+- `FactSnapshot.py` generates final fact snapshot saved to both PostgreSQL and CSV
+- Power BI imports `Fact_Snapshot.csv` for dashboard visualization
 
 **Local Setup Requirements:**
-If running locally, ensure PostgreSQL is running and update connection details in `Pipeline_Support/ETL_MasterFunction.py`. The final Power BI dashboard uses the CSV snapshot file located at `E2E_DWH_Pipeline/Fact Table Snapshot/Fact_Snapshot.csv`.
+- PostgreSQL server running on localhost with 'Real-Estate-Management' database
+- Connection details: host=localhost, user=postgres, password=asifa123
+- Optional: MOCKAROO_API_KEY environment variable for JSON data enhancement
+- Power BI imports CSV from: `E2E_DWH_Pipeline/Fact Table Snapshot/Fact_Snapshot.csv`
 
 
 
